@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock | Paper | Scissors</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main class="main">
+      <h1 class="win-message" id="win-message"></h1>
+
+      <div class="battle">
+        <div class="player">
+          <div class="player__lifes" id="player-lifes">❤️❤️❤️❤️❤️</div>
+          <div class="player__avatar">
+            <img
+              src="./img/player.png"
+              alt="player-avatar"
+              class="player__avatar-img"
+            />
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="results__player">
+            <img src="./img/question-sign.png" alt="result-player" /
+            id="result-player">
+          </div>
+          <p class="results__vs">VS</p>
+          <div class="results__enemy">
+            <img src="./img/question-sign.png" alt="result-enemy" /
+            id="result-enemy">
+          </div>
+        </div>
+
+        <div class="enemy">
+          <div class="enemy__lifes" id="enemy-lifes">❤️❤️❤️❤️❤️</div>
+          <div class="enemy__avatar">
+            <img
+              src="./img/enemy.png"
+              alt="enemy-avatar"
+              class="enemy__avatar-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="restar-btn" id="restar-btn">Restar game</div>
+
+      <h1 class="win-message" id="win-message">Choose one</h1>
+      <div class="options">
+        <button class="options__rock" id="rock" data-num="1">
+          <img src="./img/rock.png" alt="rock-img" class="rock-img" />
+        </button>
+        <button class="options__paper" id="paper" data-num="2">
+          <img src="./img/paper.png" alt="paper-img" class="paper-img" />
+        </button>
+        <button class="options__scissors" id="scissors" data-num="3">
+          <img
+            src="./img/scissors.png"
+            alt="scissors-img"
+            class="scissors-img"
+          />
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__attribution">
+        Create by
+        <a href="" target="_blank" rel="noopener" class="footer__link"
+          >NickGV</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
