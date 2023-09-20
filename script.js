@@ -17,6 +17,8 @@ restarBtn.addEventListener("click", () => {
 
   resultEnemy.src = "./img/question-sign.png";
   resultPlayer.src = "./img/question-sign.png";
+
+  restarBtn.style.display = "none";
 });
 
 function random(min, max) {
@@ -87,7 +89,6 @@ buttons.forEach((button) => {
       choosePlayer(player);
 
       winMesagge.innerText = juego(player, enemy);
-      restarBtn.styles.display = "none";
     } else {
       if (playerLifes.textContent.length > 2) {
         winMesagge.innerText = "Felicidadess Ganasteee";
